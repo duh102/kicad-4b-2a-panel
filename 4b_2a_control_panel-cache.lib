@@ -1,0 +1,99 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Trimmer-Potentiometers_TC33X-2-103E
+#
+DEF dk_Trimmer-Potentiometers_TC33X-2-103E POT 0 0 Y Y 1 F N
+F0 "POT" -210 170 60 H V C CNN
+F1 "dk_Trimmer-Potentiometers_TC33X-2-103E" 10 -110 60 H V C CNN
+F2 "digikey-footprints:Trimpot_3.8mmx3.6mm_TC33X-2-103E" 200 200 60 H I L CNN
+F3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" 200 300 60 H I L CNN
+F4 "TC33X-103ETR-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "TC33X-2-103E" 200 500 60 H I L CNN "MPN"
+F6 "Potentiometers, Variable Resistors" 200 600 60 H I L CNN "Category"
+F7 "Trimmer Potentiometers" 200 700 60 H I L CNN "Family"
+F8 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/bourns-inc/TC33X-2-103E/TC33X-103ETR-ND/612858" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRIMMER 10K OHM 0.1W J LEAD TOP" 200 1000 60 H I L CNN "Description"
+F11 "Bourns Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 0 200 0 125 N
+P 4 0 1 0 -25 125 25 125 0 75 -25 125 F
+P 9 0 1 0 -100 0 -75 50 -50 -50 -25 50 0 -50 25 50 50 -50 75 50 100 0 N
+X CCW 1 -200 0 100 R 50 40 1 1 P
+X Wiper 2 0 300 100 D 50 40 1 1 P
+X CW 3 200 0 100 L 50 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
